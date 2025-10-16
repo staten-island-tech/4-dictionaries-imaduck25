@@ -1,7 +1,7 @@
-item = {
-    "name": "Samsung 55\" 4K UHD TV",
-    "price": 429.99,
-    "department": "Televisions",
-    "description": "55-inch Ultra HD Smart TV with HDR and built-in streaming apps."
-}
-print(item)
+item1 = [
+    "name": "apple blossom pastry",
+    "price": 6.99,
+    "department": "food & bakery",
+    "description": "apple jelly filled baked pastry"
+]
+print(item1["department"])
