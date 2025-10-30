@@ -1,9 +1,3 @@
-item = {
-    "name": "apple blossom pastry",
-    "price": 4.99,
-    "description": "apple jelly filled baked pastry"
-}
-print(item["name"])
 
 item = {
     "name": "pain au chocolat",
@@ -26,4 +20,9 @@ item = {
 }
 print(item["name"])
 
-crepe crossaint
+cart = []
+print(input("what would you like to buy? "))
+if input == ["pain au chocolat", "tiramisu", "macroon"]:
+    cart.append(item)
+print((item["price"]))
+print("thank you for your purchse")
