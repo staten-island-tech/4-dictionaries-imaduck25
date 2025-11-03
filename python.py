@@ -12,22 +12,22 @@ shopwrong_items = [
     {
         "name": "macaroon",
         "price": 7.55,
-        "description": "a delicate meringue-based cookie sandwich filled with a ganache, buttercream or jam"
+        "description": "a delicate meringue-based cookie sandwich filled with a ganache, buttercream, or jam"
     }
 ]
-print(shopwrong_items[0]["name"])
-print(shopwrong_items[0]["price"])
-print(shopwrong_items[1]["name"])
-print(shopwrong_items[1]["price"])
-print(shopwrong_items[2]["name"])
-print(shopwrong_items[2]["price"])
+for index, item in enumerate(shopwrong_items):
+    print(index, ":", item["name"])
+    print(index, ":", item["price"])
+    print(index, ":", item["description"])
 
 def store():
     cart = []
     print(input("what would you like to buy? "))
     if input == ["pain au chocolat", "tiramisu", "macroon"]:
         cart.append(shopwrong_items)
-    print(shopwrong_items["price"])
+    print("thank you for your purchase! your purchase:")
+    for shopwrong_items in cart:
+        print(cart)
 """     print(input("do you wish to continue? (yes/no)"))
     if input == "no":
         print("ty for shopping here")
