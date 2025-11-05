@@ -20,17 +20,14 @@ for index, item in enumerate(shopwrong_items):
     print(index, ":", item["price"])
     print(index, ":", item["description"])
 
-def store():
+def shop():
     cart = []
     print(input("what would you like to buy? "))
     if input == ["pain au chocolat", "tiramisu", "macroon"]:
-        cart.append(shopwrong_items)
-    print("thank you for your purchase! your purchase:")
-    for shopwrong_items in cart:
-        print(cart)
-"""     print(input("do you wish to continue? (yes/no)"))
-    if input == "no":
-        print("ty for shopping here")
-    if input == "yes":
-        print(store) """
-store()
+            cart.append(shopwrong_items)
+            print("thank you for your purchase! would you like to continue? (yes/no) ")
+            if input == ["yes"]:
+                print(input)
+            if input == ["no"]:
+                print("....goodbye.....")
+shop()
