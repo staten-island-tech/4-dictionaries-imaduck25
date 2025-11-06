@@ -25,9 +25,4 @@ def shop():
     print(input("what would you like to buy? "))
     if input == ["pain au chocolat", "tiramisu", "macroon"]:
             cart.append(shopwrong_items)
-            print("thank you for your purchase! would you like to continue? (yes/no) ")
-            if input == ["yes"]:
-                print(input)
-            if input == ["no"]:
-                print("....goodbye.....")
-shop()
+            print("thank you for your purchase!")
