@@ -15,14 +15,14 @@ shopwrong_items = [
         "description": "a delicate meringue-based cookie sandwich filled with a ganache, buttercream, or jam"
     }
 ]
+
 for index, item in enumerate(shopwrong_items):
-    print(index, ":", item["name"])
-    print(index, ":", item["price"])
-    print(index, ":", item["description"])
+        print(index, ":", item["name"], item["price"], item["description"])
 
 def shop():
     cart = []
-    print(input("what would you like to buy? "))
-    if input == ["pain au chocolat", "tiramisu", "macroon"]:
-            cart.append(shopwrong_items)
-            print("thank you for your purchase!")
+    print(input["what would you like to buy? type the number of what you want to buy. "])
+    if input == (item["name"]):
+       cart.append(item)
+    print("thank you for your purchase!")
+shop()
