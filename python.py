@@ -1,32 +1,45 @@
 shopwrong_items = [
     {
-        "name": "pain au chocolat",
+        "name": "Pain au Chocolat",
         "price": 6.75,
         "description": "chocolate creme filled pastry"
     },
     {
-        "name": "tiramisu",
-        "price": 9.95,
+        "name": "Tiramisu",
+        "price": 10.50,
         "description": "coffee soaked biscuits layered with coffee flavored creme and topped with coffee powder"
     },
     {
-        "name": "macaroon",
+        "name": "Macaroon",
         "price": 7.55,
         "description": "a delicate meringue-based cookie sandwich filled with a ganache, buttercream, or jam"
     }
 ]
-
 for index, item in enumerate(shopwrong_items):
-        print(index, ":", item["name"], item["price"], item["description"])
+    print(index, ":", item["name"])
+    print("Price: $", item["price"])
+    print("Description:", item["description"])
 
 def shop():
     cart = []
-    print(input("what would you like to buy? "))
-    if input == ["pain au chocolat", "tiramisu", "macroon"]:
-            cart.append(shopwrong_items)
-            print("thank you for your purchase! would you like to continue? (yes/no) ")
-            if input == ["yes"]:
-                print(input)
-            if input == ["no"]:
-                print("....goodbye.....")
+    total = 0.00
+    print("★Welcome to shopwrong!★")
+    while True:
+        print("What would you like to buy?")
+        for item in shopwrong_items:
+            print("★ ", item["name"])
+        choice = input("Type the name of what you want to buy: ").lower()
+        for item in shopwrong_items:
+            if item["name"].lower() == choice:
+                cart.append(item["name"])
+                total += item["price"]
+                print("★ty for your purchase!★")
+                break
+        again = input("do u wish to continue? (yes/no): ").lower()
+        if again != "yes":
+            break
+    print("your cart:")
+    for item in cart:
+        print("★ ", item)
+    print("Total: $", round(total, 2))
 shop()
