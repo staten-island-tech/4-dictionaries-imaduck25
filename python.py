@@ -16,14 +16,14 @@ shopwrong_items = [
     }
 ]
 for index, item in enumerate(shopwrong_items):
-    print(index, ":", item["name"])
+    print("★ ", item["name"])
     print("Price: $", item["price"])
     print("Description:", item["description"])
 
 def shop():
     cart = []
     total = 0.00
-    print("★Welcome to shopwrong!★")
+    print("★ Welcome to shopwrong!★")
     while True:
         print("What would you like to buy?")
         for item in shopwrong_items:
@@ -33,7 +33,7 @@ def shop():
             if item["name"].lower() == choice:
                 cart.append(item["name"])
                 total += item["price"]
-                print("★ty for your purchase!★")
+                print("★ ty for your purchase!★")
                 break
         again = input("do u wish to continue? (yes/no): ").lower()
         if again != "yes":
